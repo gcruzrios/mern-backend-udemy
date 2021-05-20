@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
 app.use(cors({origin:'*'}));
-
+app.use(express.static('public'));
 
 app.use('/jefe',require('./routes/Jefe.route'));
 app.use('/empleado',require('./routes/Empleado.route'));
