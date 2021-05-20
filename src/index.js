@@ -17,6 +17,11 @@ app.use('/jefe',require('./routes/Jefe.route'));
 app.use('/empleado',require('./routes/Empleado.route'));
 
 
-app.listen(app.get('Port'), ()=>{
-    console.log('Servidor escuchando por el Puerto ', app.get('Port'));
+app.listen(process.env.PORT,()=>{
+    console.log(`Servidor corriendo en puerto ${ process.env.PORT }`)
+
 });
+
+//app.listen(app.get('Port'), ()=>{
+//    console.log('Servidor escuchando por el Puerto ', app.get('Port'));
+//});
