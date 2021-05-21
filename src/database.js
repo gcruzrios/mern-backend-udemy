@@ -1,7 +1,7 @@
 
 const mongoose= require('mongoose')
 
-URI=('mongodb+srv://gcruzrios:Grvn240675@clustergcr.o8wwz.mongodb.net/MernDb');
+URI=(process.env.DB_CNN);
 
 mongoose.connect(URI, {
     useNewUrlParser:true,
