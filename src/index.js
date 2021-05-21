@@ -3,6 +3,7 @@ const app = express();
 const morgan= require('morgan');
 const cors = require('cors');
 const bodyparser= require('body-parser');
+require('dotenv').config();
 
 require('./database');
 
@@ -22,6 +23,6 @@ app.listen(process.env.PORT,()=>{
 
 });
 
-//app.listen(app.get('Port'), ()=>{
+// app.listen(app.get('Port'), ()=>{
 //    console.log('Servidor escuchando por el Puerto ', app.get('Port'));
-//});
+// });

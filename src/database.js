@@ -1,7 +1,7 @@
 
 const mongoose= require('mongoose')
 
-URI=(process.env.DB_CNN);
+URI=process.env.DB_CNN;
 
 mongoose.connect(URI, {
     useNewUrlParser:true,
