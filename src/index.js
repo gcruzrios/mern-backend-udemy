@@ -14,6 +14,9 @@ app.use(express.json())
 app.use(cors({origin:'*'}));
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.send('Hola Mundo, aquí servidor NodeJS desde Heroku!')
+  })
 app.use('/jefe',require('./routes/Jefe.route'));
 app.use('/empleado',require('./routes/Empleado.route'));
 
